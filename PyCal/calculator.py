@@ -28,8 +28,6 @@ elif choice == '-':
 elif choice == '*':
    print(A,"*",B,"=", multiply(A,B))
 elif choice == '/':
-      if B==0:
-         print("Divided by zero Error")
-      print(A,"/",B,"=", divide(A,B))
+   print(A,"/",B,"=", divide(A,B))
 else:
     print("Invalid input")
