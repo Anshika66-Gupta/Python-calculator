@@ -17,19 +17,21 @@ print("+")
 print("-")
 print("*")
 print("/")
+op=["+","-","*","/"]
 # User input
 choice = input("Enter operator to use:")
 A = int(input("Enter first number: "))
 B = int(input("Enter second number: "))
-if choice == '+':
-   print(A,"+",B,"=", add(A,B))
-elif choice == '-':
-   print(A,"-",B,"=", subtract(A,B))
-elif choice == '*':
-   print(A,"*",B,"=", multiply(A,B))
-elif choice == '/':
-      if B==0:
-         print("Divided by zero Error")
-      print(A,"/",B,"=", divide(A,B))
+for choice in op:
+    if choice == '+':
+       print(A,"+",B,"=", add(A,B))
+    elif choice == '-':
+       print(A,"-",B,"=", subtract(A,B))
+    elif choice == '*':
+       print(A,"*",B,"=", multiply(A,B))
+    elif choice == '/':
+       if B==0:
+           print("Divided by zero Error")
+       print(A,"/",B,"=", divide(A,B))
 else:
     print("Invalid input")
